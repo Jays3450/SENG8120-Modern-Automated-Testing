@@ -77,3 +77,28 @@ It uses **Jest** for unit testing, following basic TDD principles.
 | Should validate positive coverage values     | `10`, `-5`                | Return negative or error      |
 | Should always return a number                | `10`, `"abc"`             | Return `NaN` or throw error   |
 | Should round output to 2 decimal places      | `25`, `3.3333`            | Return `7.50` (optional rule) |
+
+
+
+### set up 
+
+```bash
+npm init -y
+npm install --save-dev jest ts-jest @types/jest typescript
+
+npm install --save-dev typescript jest ts-jest @types/jest
+
+npx ts-jest config:init
+
+"scripts": {
+  "test": "jest"
+}
+
+npm test
+
+### How to run 
+### Run the Test script:
+```bash
+bash calculateCanvasSize.test.ts` 
+bash paintRequiredCalculator.test.ts` 
+# run all 10 test cases one by one
