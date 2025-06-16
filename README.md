@@ -21,7 +21,7 @@ It uses **Jest** for unit testing, following basic TDD principles.
 - TypeScript installed: `npm install -g typescript`
 - Jest setup for TypeScript (via ts-jest)
 
-## 📁 Files
+## Files
 
 - `main.ts` – Entry script for the application
 - `calculateCanvasSize.ts` – Function to calculate canvas area
