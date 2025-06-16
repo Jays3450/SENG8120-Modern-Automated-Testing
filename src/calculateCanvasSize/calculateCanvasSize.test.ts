@@ -17,9 +17,13 @@ describe("calculateCanvasSize", () => {
     expect(result).toEqual(NaN);
   });
   // Test case # 3
-   test("parseInt and ignores decimals i.e., 10.2 = 10 ", () => {
-    const result = calculateCanvasSize("10.2", "3.5"); 
+   test("parseInt and ignores decimals i.e., 10.7 = 10 ", () => {
+    const result = calculateCanvasSize("10.7", "2.5"); 
     expect(result).toEqual(20);
   });
- 
+   // Test case # 4
+  test("returns negative area value for negative values", () => {
+    const result = calculateCanvasSize("-10", "5");
+    expect(result).toEqual(-50);
+  });
 });
