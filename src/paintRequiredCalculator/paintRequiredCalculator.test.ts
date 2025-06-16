@@ -21,4 +21,9 @@ describe("paint required calculator", () => {
     const result = paintRequiredCalculator(25, 4);
     expect(result).toBeCloseTo(6.25);
   });
+  // Test case # 4
+  test("handles very small coverage values", () => {
+    const result = paintRequiredCalculator(25, 4);
+    expect(result).toBeCloseTo(6.25);
+  });
 });
