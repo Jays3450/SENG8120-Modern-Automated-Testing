@@ -1,6 +1,6 @@
 #  Paint Calculator - Automated Testing (SENG8120)
 
-## 🧾 Overview
+## Overview
 This project demonstrates testing of a simple TypeScript application that:
 1. Calculates the area of a canvas (length × width)
 2. Calculates the paint required based on area and coverage
