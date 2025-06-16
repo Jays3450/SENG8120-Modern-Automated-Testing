@@ -11,4 +11,10 @@ describe("calculateCanvasSize", () => {
     const result = calculateCanvasSize("0", "50");
     expect(result).toEqual(0);
   });
+   // Test case # 2
+    test("returns NaN for non-numeric input", () => {
+    const result = calculateCanvasSize("abc", "10");
+    expect(result).toEqual(NaN);
+  });
+ 
 });
