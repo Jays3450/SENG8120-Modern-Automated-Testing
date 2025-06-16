@@ -1,59 +1,33 @@
-# SENG8120 Modern Automated Testing 
+#  Paint Calculator - Automated Testing (SENG8120)
 
-## Purpose
+## 🧾 Overview
+This project demonstrates testing of a simple TypeScript application that:
+1. Calculates the area of a canvas (length × width)
+2. Calculates the paint required based on area and coverage
 
-This repository houses the code we require for examples and assignments.
+It uses **Jest** for unit testing, following basic TDD principles.
 
-## Repository Usage
+**Formulas:**
+- `Area = Length × Width`
+- `Paint Required = Area / CoveragePerLiter`
 
-This repository will contain branches of code.
+---
 
-Please refer to your instructor's directions on how to use this repository.
+##  Testing Instructions
 
-## Branch Usage
+### Prerequisites
 
-**Installing The Dependencies**
+- Node.js installed
+- TypeScript installed: `npm install -g typescript`
+- Jest setup for TypeScript (via ts-jest)
 
-You will need to install dependencies by using:
+## 📁 Files
 
-```bash
-npm install
-```
+- `main.ts` – Entry script for the application
+- `calculateCanvasSize.ts` – Function to calculate canvas area
+- `paintRequiredCalculator.ts` – Function to calculate paint required
+- `calculateCanvasSize.test.ts` – Unit tests for area calculation
+- `paintRequiredCalculator.test.ts` – Unit tests for paint calculation
+- `README.md` – Project documentation
 
-**Running The Project**
-
-To run the project, you must first build the project:
-
-```bash
-npm run build
-```
-
-followed by:
-
-```bash
-npm start
-```
-
-Note:  if you make a change in the production code, you must `build` & `start`.
-Otherwise, your changes will not be reflected.
-
-**Running The Tests**
-
-To run the tests, you can use
-
-```bash
-npm run test
-```
-
-To keep the tests running, you can use
-
-```bash
-npm run test -- --watch
-```
-
-To run a specific test, you can use
-
-```bash
-npm run test [my test name]
-```
 
