@@ -16,4 +16,9 @@ describe("paint required calculator", () => {
     const result = paintRequiredCalculator(100, 0);
     expect(result).toEqual(Infinity);
   });
+  //Test case # 3
+  test("returns decimal values accurately", () => {
+    const result = paintRequiredCalculator(25, 4);
+    expect(result).toBeCloseTo(6.25);
+  });
 });
