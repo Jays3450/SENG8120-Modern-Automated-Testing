@@ -23,7 +23,7 @@ describe("paint required calculator", () => {
   });
   // Test case # 4
   test("handles very small coverage values", () => {
-    const result = paintRequiredCalculator(25, 4);
-    expect(result).toBeCloseTo(6.25);
+    const result = paintRequiredCalculator(10, 0.01);
+    expect(result).toBeCloseTo(1000);
   });
 });
