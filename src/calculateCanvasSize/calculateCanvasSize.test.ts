@@ -13,8 +13,13 @@ describe("calculateCanvasSize", () => {
   });
    // Test case # 2
     test("returns NaN for non-numeric input", () => {
-    const result = calculateCanvasSize("abc", "10");
+    const result = calculateCanvasSize("xyz", "10");
     expect(result).toEqual(NaN);
+  });
+  // Test case # 3
+   test("parseInt and ignores decimals i.e., 10.2 = 10 ", () => {
+    const result = calculateCanvasSize("10.2", "3.5"); 
+    expect(result).toEqual(20);
   });
  
 });
